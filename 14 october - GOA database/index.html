@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Student Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Goa Students Main Database</h1>
+        <form id="signInForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="role">Select Role:</label>
+            <select id="role" required>
+                <option value="Viewer">Viewer</option>
+                <option value="Moderator">Moderator</option>
+            </select>
+
+            <button type="submit">Sign In</button>
+        </form>
+
+        <div id="studentManagement" style="display:none;">
+            <h2 id="roleTitle"></h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mother's Name</th>
+                        <th>Facebook</th>
+                        <th>Age</th>
+                        <th>Group Leader</th>
+                        <th id="actionsHeader" style="display:none;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <div id="addStudentSection" style="display:none;">
+                <h3>Add Student</h3>
+                <form id="addStudentForm">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="text" id="motherName" placeholder="Mother's Name" required>
+                    <input type="text" id="facebook" placeholder="Facebook URL" required>
+                    <input type="number" id="age" placeholder="Age" required>
+                    <input type="text" id="groupLeader" placeholder="Group Leader" required>
+                    <button type="submit">Add Student</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
