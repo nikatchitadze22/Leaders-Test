@@ -1,0 +1,74 @@
+/* // Objective: Build a website to display current weather data for a city input.
+
+// Requirements:
+// 1. Core Features: Search bar and display for temperature and weather conditions.
+// 2. Styling: Basic responsive layout, icons for weather conditions.
+// 3. Optional: Additional features like temperature conversion or a simple 3-day forecast.
+ */
+
+
+/* Basic styles for layout and responsiveness */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.weather-display {
+    margin-top: 20px;
+}
+
+#forecast {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .weather-container {
+        width: 90%;
+    }
+}

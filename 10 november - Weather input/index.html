@@ -1,0 +1,37 @@
+<!-- // Objective: Build a website to display current weather data for a city input.
+
+// Requirements:
+// 1. Core Features: Search bar and display for temperature and weather conditions.
+// 2. Styling: Basic responsive layout, icons for weather conditions.
+// 3. Optional: Additional features like temperature conversion or a simple 3-day forecast. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button id="searchBtn">Search</button>
+        
+        <div class="weather-display">
+            <div id="weatherInfo"></div>
+            <div id="temperature"></div>
+            <div id="weatherCondition"></div>
+        </div>
+
+        <div id="forecast"></div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
